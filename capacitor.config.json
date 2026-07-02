@@ -1,0 +1,16 @@
+{
+  "appId": "pt.rjp.iprjp",
+  "appName": "IP_RJP",
+  "webDir": "dist",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1200,
+      "backgroundColor": "#008b7a",
+      "showSpinner": false
+    },
+    "StatusBar": {
+      "style": "LIGHT",
+      "backgroundColor": "#008b7a"
+    }
+  }
+}
