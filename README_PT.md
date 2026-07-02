@@ -1,49 +1,18 @@
-# IP_RJP Agenda — Google / Gmail
+# IP Agenda V6 — Deslocações e Prevenções
 
-Versão preparada para usar o ecossistema Google em vez do Microsoft Outlook.
+Agenda profissional para registar deslocações, prevenções, matrículas/viaturas, horas, quilómetros e gerar relatório mensal em PDF.
 
-## Funcionalidades
+## Módulos
+- Registos
+- Deslocações
+- Prevenções
+- Agenda Google opcional
+- Relatório/PDF mensal
+- Definições Google/Gmail
 
-- Login Google/Gmail
-- Agenda Google Calendar
-- Google Tasks
-- Contactos Google
-- Gmail Send
-- Google Drive / Google Sheets via Apps Script opcional
-- Atividades IP_RJP guardadas localmente e exportáveis para o Google Calendar
-
-## Instalação
-
+## WebApp
 ```bash
-npm install --legacy-peer-deps
+npm install
 npm run build
 ```
-
-## Desenvolvimento
-
-```bash
-npm run dev
-```
-
-## Configuração Google
-
-Lê o ficheiro `GOOGLE_SETUP_PT.md`.
-
-Na app, abre **Definições** e preenche:
-
-- Google Client ID
-- Google API Key, opcional
-- Apps Script URL, opcional
-- Autor
-- Organização
-
-## Apps Script
-
-O script opcional está em:
-
-```txt
-google-apps-script/Code.gs
-google-apps-script/appsscript.json
-```
-
-Publicar como Web App e copiar o URL `/exec` para a app.
+A pasta final é `dist`.
