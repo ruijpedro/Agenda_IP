@@ -53,7 +53,7 @@ export async function signIn(settings) {
   })
   accessToken = token
   localStorage.setItem('ip_rjp_google_access_token_v1', token)
-  account = await googleApi('/oauth2/v3/userinfo', { absolute: true })
+  account = await googleApi('https://www.googleapis.com/oauth2/v3/userinfo', { absolute: true })
   localStorage.setItem('ip_rjp_google_account_v1', JSON.stringify(account))
   return account
 }
